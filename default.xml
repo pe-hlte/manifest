@@ -288,7 +288,6 @@
   <project name="platform/external/oauth" path="external/oauth"/>
   <project name="platform/external/objenesis" path="external/objenesis"/>
   <project name="platform/external/oj-libjdwp" path="external/oj-libjdwp"/>
-  <project name="platform/external/okhttp" path="external/okhttp"/>
   <project name="platform/external/one-true-awk" path="external/one-true-awk"/>
   <project name="platform/external/opencv" path="external/opencv"/>
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer"/>
@@ -402,7 +401,6 @@
   <project name="platform/external/webp" path="external/webp"/>
   <project name="platform/external/webrtc" path="external/webrtc"/>
   <project name="platform/external/webview_support_interfaces" path="external/webview_support_interfaces"/>
-  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
   <project name="platform/external/wycheproof" path="external/wycheproof"/>
   <project name="platform/external/x264" path="external/x264"/>
   <project name="platform/external/xmlrpcpp" path="external/xmlrpcpp"/>
@@ -622,7 +620,6 @@
   <project name="platform/system/libufdt" path="system/libufdt"/>
   <project name="platform/system/libvintf" path="system/libvintf"/>
   <project name="platform/system/media" path="system/media"/>
-  <project name="platform/system/netd" path="system/netd"/>
   <project name="platform/system/nfc" path="system/nfc"/>
   <project name="platform/system/nvram" path="system/nvram"/>
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap"/>

@@ -12,4 +12,8 @@
   <project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" clone-depth="1" remote="aosp" />
   <project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" clone-depth="1" remote="aosp" />
 
+  <!-- MISC repos -->
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp" />
+  <project name="platform/external/okhttp" path="external/okhttp" remote="aosp" />
+
 </manifest>

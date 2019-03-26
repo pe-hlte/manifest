@@ -11,6 +11,10 @@
           revision="pie-caf"
           review="gerrit.pixelexperience.org" />
 
+  <remote name="pe-hlte"
+          fetch="https://github.com/pe-hlte"
+          revision="pie-caf" />
+
   <remote name="pixel-devices"
           fetch="https://github.com/PixelExperience-Devices"
           revision="pie-caf" />
@@ -25,18 +29,9 @@
   <!-- CAF repos -->
   <project path="device/qcom/common" name="device_qcom_common" remote="pixel-caf" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel-caf" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf_msm8996" remote="pixel-caf" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio-caf_msm8998" remote="pixel-caf" />
-  <project path="hardware/qcom/audio-caf/sdm845" name="hardware_qcom_audio-caf_sdm845" remote="pixel-caf" />
   <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" remote="pixel-caf" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="pixel-caf" />
-  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display-caf_msm8996" remote="pixel-caf" />
-  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display-caf_msm8998" remote="pixel-caf" />
-  <project path="hardware/qcom/display-caf/sdm845" name="hardware_qcom_display-caf_sdm845" remote="pixel-caf" />
   <project path="hardware/qcom/fm" name="hardware_qcom_fm" remote="pixel" />
-  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf_msm8996" remote="pixel-caf" />
-  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media-caf_msm8998" remote="pixel-caf" />
-  <project path="hardware/qcom/media-caf/sdm845" name="hardware_qcom_media-caf_sdm845" remote="pixel-caf" />
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="pixel-caf" />
   <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="pixel-caf" />
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="pixel-caf" />
@@ -62,7 +57,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel-caf" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="pixel-caf" />
+  <project path="frameworks/av" name="frameworks_av" remote="pe-hlte" />
   <project path="frameworks/base" name="frameworks_base" remote="pixel-caf" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel-caf" />
   <project path="frameworks/opt/net/voip" name="frameworks_opt_net_voip" remote="pixel-caf" />
@@ -70,7 +65,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel-caf" />
 
   <!-- General repos -->
-  <project path="bionic" name="bionic" remote="pixel-caf" />
+  <project path="bionic" name="bionic" remote="pe-hlte" />
   <project path="build/make" name="build" remote="pixel-caf">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -88,7 +83,7 @@
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
   <project path="development" name="development" remote="pixel-caf" />
   <project path="manifest" name="manifest" remote="pixel-caf" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel-caf" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="pe-hlte" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="pixel-gitlab" />
   <project path="vendor/qcom/common" name="vendor_qcom_common" remote="pixel-gitlab" revision="pie-caf" />
@@ -125,11 +120,25 @@
   <project path="system/bt" name="system_bt" remote="pixel-caf" />
   <project path="system/core" name="system_core" remote="pixel-caf" />
   <project path="system/extras" name="system_extras" remote="pixel-caf" />
+  <project path="system/netd" name="system_netd" remote="pe-hlte" />
   <project path="system/security" name="system_security" remote="pixel-caf" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="pixel-caf" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="pe-hlte" />
   <project path="system/timezone" name="system_timezone" remote="pixel-caf" />
   <project path="system/tools/hidl" name="system_tools_hidl" remote="pixel-caf" />
   <project path="system/update_engine" name="system_update_engine" remote="pixel-caf" />
   <project path="system/vold" name="system_vold" remote="pixel-caf" />
+
+  <!-- hlte repos -->
+
+  <project name="ArrowXXX/device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="9.0-caf" />
+  <project name="ArrowXXX/device_samsung_hltechn" path="device/samsung/hltechn" remote="github" revision="9.0-caf" />
+  <project name="ArrowXXX/device_samsung_hltekor" path="device/samsung/hltekor" remote="github" revision="9.0-caf" />
+  <project name="ArrowXXX/device_samsung_hltetmo" path="device/samsung/hltetmo" remote="github" revision="9.0-caf" />
+  <project name="Jprimero15/device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="pie-caf" />
+  <project name="Jprimero15/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" revision="pie" />    
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="lineage-16.0" />
+  <project name="Jprimero15/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" revision="linux-3.4.113" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-16.0" />
+  <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-16.0" />
 
 </manifest>

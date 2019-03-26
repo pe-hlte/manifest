@@ -12,5 +12,14 @@
   <project path="external/exfat" name="android_external_exfat" remote="lineage" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
-
+  
+  <!-- Device compatability repos -->
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="lineage" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" remote="lineage"  revision="lineage-16.0-caf-8974" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" remote="lineage"  revision="lineage-16.0-caf-8974" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" remote="lineage"  revision="lineage-16.0-caf-8974" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="lineage" />
+  <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="lineage" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="lineage" />
+ 
 </manifest>
